@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EBBE7564-54DE-4CB0-89DD-7359DED930A9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pokemon Type Check/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 7138393582a8d96f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Pokemon_Type_Check.Pokemon.type2 : Pokemon_Type_Check.PokemonType"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 24eec6daaeb9d0e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.type2.getter : Pokemon_Type_Check.PokemonType"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - decbfe0537fb8c1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.type2.setter : Pokemon_Type_Check.PokemonType"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - de6fb5591b6d0e53"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.type2.modify : Pokemon_Type_Check.PokemonType with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 9c5fd2c9e1992ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.$type2.getter : Combine.Published&lt;Pokemon_Type_Check.PokemonType&gt;.Publisher"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 9c5fd2c9e1992ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.$type2.setter : Combine.Published&lt;Pokemon_Type_Check.PokemonType&gt;.Publisher"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 5d6225b1eb2aade8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Pokemon_Type_Check.Pokemon.$type2.modify : Combine.Published&lt;Pokemon_Type_Check.PokemonType&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Pokemon Type Check"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nickhale/gitstuff/Pokemon%20Type%20Check/Pokemon%20Type%20Check/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
