@@ -438,6 +438,7 @@ struct ContentView: View {
     let icondim = 30
     @StateObject var pokemon = theTypes()
     @Environment(\.managedObjectContext) private var viewContext
+    
     //@StateObject var mypokemon = Pokemon(allTypes.regular,allTypes.noType)
    
     var body: some View {
@@ -453,7 +454,6 @@ struct ContentView: View {
                 
                 let types = ["noType","normal","fire","water","grass","electric","ice","fighting","poison","ground","flying","psychic","bug","rock","ghost","dark","dragon","steel","fairy"]
                 Section{
-                    Spacer()
                     //pokemon type 1 (dropdown)
                     VStack{
                         HStack{
@@ -488,9 +488,7 @@ struct ContentView: View {
                     }
                 }.padding()
                 //Results
-                Spacer()
                 ScrollView(.horizontal){
-                    Spacer()
                     VStack(alignment: .leading){
                         if(!pokemon.fourx.isEmpty){
                             HStack(spacing: 2){
@@ -540,12 +538,26 @@ struct ContentView: View {
                         
                     }
                     Spacer()
-                }.padding()
-
+                }.padding().background(Color(UIColor.systemGray)).cornerRadius(15).frame(width:UIScreen.main.bounds.size.width-10,height:260)
+                VStack{
+                    //gray6good for sarkmode
+                    Text("Test link1")
+                    Text("Test Link2")
+                    Text("Test Link3")
+                }
             }
+        }.navigationTitle("Type Matchups")
+    }
+}
+
+
+//other page views
+struct pokedex: View{
+    var body: some View{
+        NavigationView{
+            
         }
     }
-
 }
 
 
