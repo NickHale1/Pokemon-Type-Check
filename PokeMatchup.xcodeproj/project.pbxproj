@@ -38,16 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93952FA5292958B300EDE3D3 /* Pokemon Type Check.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Type Check.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93952FA5292958B300EDE3D3 /* PokeMatchup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMatchup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93952FA8292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_Type_CheckApp.swift; sourceTree = "<group>"; };
 		93952FAA292958B300EDE3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93952FAC292958B700EDE3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Pokemon Type Check/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		93952FAF292958B700EDE3D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93952FB1292958B700EDE3D3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		93952FB4292958B700EDE3D3 /* Pokemon_Type_Check.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokemon_Type_Check.xcdatamodel; sourceTree = "<group>"; };
-		93952FBA292958B700EDE3D3 /* Pokemon Type CheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon Type CheckTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93952FBA292958B700EDE3D3 /* PokeMatchupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMatchupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93952FBE292958B700EDE3D3 /* Pokemon_Type_CheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_Type_CheckTests.swift; sourceTree = "<group>"; };
-		93952FC4292958B700EDE3D3 /* Pokemon Type CheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pokemon Type CheckUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93952FC4292958B700EDE3D3 /* PokeMatchupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMatchupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93952FC8292958B700EDE3D3 /* Pokemon_Type_CheckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_Type_CheckUITests.swift; sourceTree = "<group>"; };
 		93952FCA292958B700EDE3D3 /* Pokemon_Type_CheckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_Type_CheckUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,9 +90,9 @@
 		93952FA6292958B300EDE3D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93952FA5292958B300EDE3D3 /* Pokemon Type Check.app */,
-				93952FBA292958B700EDE3D3 /* Pokemon Type CheckTests.xctest */,
-				93952FC4292958B700EDE3D3 /* Pokemon Type CheckUITests.xctest */,
+				93952FA5292958B300EDE3D3 /* PokeMatchup.app */,
+				93952FBA292958B700EDE3D3 /* PokeMatchupTests.xctest */,
+				93952FC4292958B700EDE3D3 /* PokeMatchupUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93952FA4292958B300EDE3D3 /* Pokemon Type Check */ = {
+		93952FA4292958B300EDE3D3 /* PokeMatchup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93952FCE292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type Check" */;
+			buildConfigurationList = 93952FCE292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchup" */;
 			buildPhases = (
 				93952FA1292958B300EDE3D3 /* Sources */,
 				93952FA2292958B300EDE3D3 /* Frameworks */,
@@ -150,14 +150,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pokemon Type Check";
+			name = PokeMatchup;
 			productName = "Pokemon Type Check";
-			productReference = 93952FA5292958B300EDE3D3 /* Pokemon Type Check.app */;
+			productReference = 93952FA5292958B300EDE3D3 /* PokeMatchup.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93952FB9292958B700EDE3D3 /* Pokemon Type CheckTests */ = {
+		93952FB9292958B700EDE3D3 /* PokeMatchupTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93952FD1292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type CheckTests" */;
+			buildConfigurationList = 93952FD1292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchupTests" */;
 			buildPhases = (
 				93952FB6292958B700EDE3D3 /* Sources */,
 				93952FB7292958B700EDE3D3 /* Frameworks */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				93952FBC292958B700EDE3D3 /* PBXTargetDependency */,
 			);
-			name = "Pokemon Type CheckTests";
+			name = PokeMatchupTests;
 			productName = "Pokemon Type CheckTests";
-			productReference = 93952FBA292958B700EDE3D3 /* Pokemon Type CheckTests.xctest */;
+			productReference = 93952FBA292958B700EDE3D3 /* PokeMatchupTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		93952FC3292958B700EDE3D3 /* Pokemon Type CheckUITests */ = {
+		93952FC3292958B700EDE3D3 /* PokeMatchupUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93952FD4292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type CheckUITests" */;
+			buildConfigurationList = 93952FD4292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchupUITests" */;
 			buildPhases = (
 				93952FC0292958B700EDE3D3 /* Sources */,
 				93952FC1292958B700EDE3D3 /* Frameworks */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				93952FC6292958B700EDE3D3 /* PBXTargetDependency */,
 			);
-			name = "Pokemon Type CheckUITests";
+			name = PokeMatchupUITests;
 			productName = "Pokemon Type CheckUITests";
-			productReference = 93952FC4292958B700EDE3D3 /* Pokemon Type CheckUITests.xctest */;
+			productReference = 93952FC4292958B700EDE3D3 /* PokeMatchupUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 93952FA0292958B300EDE3D3 /* Build configuration list for PBXProject "Pokemon Type Check" */;
+			buildConfigurationList = 93952FA0292958B300EDE3D3 /* Build configuration list for PBXProject "PokeMatchup" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,9 +227,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93952FA4292958B300EDE3D3 /* Pokemon Type Check */,
-				93952FB9292958B700EDE3D3 /* Pokemon Type CheckTests */,
-				93952FC3292958B700EDE3D3 /* Pokemon Type CheckUITests */,
+				93952FA4292958B300EDE3D3 /* PokeMatchup */,
+				93952FB9292958B700EDE3D3 /* PokeMatchupTests */,
+				93952FC3292958B700EDE3D3 /* PokeMatchupUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,12 +296,12 @@
 /* Begin PBXTargetDependency section */
 		93952FBC292958B700EDE3D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93952FA4292958B300EDE3D3 /* Pokemon Type Check */;
+			target = 93952FA4292958B300EDE3D3 /* PokeMatchup */;
 			targetProxy = 93952FBB292958B700EDE3D3 /* PBXContainerItemProxy */;
 		};
 		93952FC6292958B700EDE3D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93952FA4292958B300EDE3D3 /* Pokemon Type Check */;
+			target = 93952FA4292958B300EDE3D3 /* PokeMatchup */;
 			targetProxy = 93952FC5292958B700EDE3D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.Pokemon-Type-Check";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.Pokematchup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -479,7 +479,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.Pokemon-Type-Check";
+				PRODUCT_BUNDLE_IDENTIFIER = "Peterborough-Programmers.Pokematchup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -503,7 +503,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokemon Type Check.app/Pokemon Type Check";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeMatchup.app/PokeMatchup";
 			};
 			name = Debug;
 		};
@@ -523,7 +523,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pokemon Type Check.app/Pokemon Type Check";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeMatchup.app/PokeMatchup";
 			};
 			name = Release;
 		};
@@ -566,7 +566,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		93952FA0292958B300EDE3D3 /* Build configuration list for PBXProject "Pokemon Type Check" */ = {
+		93952FA0292958B300EDE3D3 /* Build configuration list for PBXProject "PokeMatchup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93952FCC292958B700EDE3D3 /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93952FCE292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type Check" */ = {
+		93952FCE292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93952FCF292958B700EDE3D3 /* Debug */,
@@ -584,7 +584,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93952FD1292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type CheckTests" */ = {
+		93952FD1292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchupTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93952FD2292958B700EDE3D3 /* Debug */,
@@ -593,7 +593,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93952FD4292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "Pokemon Type CheckUITests" */ = {
+		93952FD4292958B700EDE3D3 /* Build configuration list for PBXNativeTarget "PokeMatchupUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93952FD5292958B700EDE3D3 /* Debug */,
