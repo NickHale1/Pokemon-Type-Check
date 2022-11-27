@@ -14,10 +14,10 @@
             filePath = "Pokemon Type Check/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "init()"
-            landmarkType = "7">
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "theTypes"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "78D50571-3186-4AF3-AC8C-20788D19CCDD - 7138393582a8d96f"

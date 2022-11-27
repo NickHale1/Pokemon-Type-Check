@@ -9,6 +9,40 @@ import SwiftUI
 import CoreData
 
 
+
+//The fixing the app project
+//A project to refactor names and reformat code to provide more functionality
+
+//A globalstatic dictionary to hold all the different types
+struct types{
+    //let Types
+}
+
+struct montype{
+    let name: String
+    let Battlevals: [String:Float]
+    let color : Color
+    let icon : Image
+    
+}
+
+struct monMove {
+    let type : montype
+    let moveType : movetypes
+    let name : String
+    let power : Int
+}
+
+enum movetypes {
+    
+}
+
+// an individual monster
+class monster {
+    
+}
+
+
 //The types
 
 public class theTypes :ObservableObject{
@@ -541,6 +575,7 @@ struct ContentView: View {
                 }.padding().background(Color(UIColor.systemGray)).cornerRadius(15).frame(width:UIScreen.main.bounds.size.width-10,height:260)
                 VStack{
                     //gray6good for sarkmode
+                    NavigationLink("Damage Calculator", destination: damageCalc())
                     Text("Test link1")
                     Text("Test Link2")
                     Text("Test Link3")
@@ -552,11 +587,11 @@ struct ContentView: View {
 
 
 //other page views
-struct pokedex: View{
+struct damageCalc: View{
     var body: some View{
         NavigationView{
             
-        }
+        }.navigationTitle("Damage Calculator")
     }
 }
 

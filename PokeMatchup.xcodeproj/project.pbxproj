@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		936FFE73292DB6940074A8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAC292958B700EDE3D3 /* Assets.xcassets */; };
 		936FFE74292DB6950074A8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAC292958B700EDE3D3 /* Assets.xcassets */; };
-		93952FA9292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93952FA8292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift */; };
+		93952FA9292958B300EDE3D3 /* PokeMatchupapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */; };
 		93952FAB292958B300EDE3D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93952FAA292958B300EDE3D3 /* ContentView.swift */; };
 		93952FAD292958B700EDE3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAC292958B700EDE3D3 /* Assets.xcassets */; };
 		93952FB0292958B700EDE3D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAF292958B700EDE3D3 /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		93952FA5292958B300EDE3D3 /* PokeMatchup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMatchup.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93952FA8292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon_Type_CheckApp.swift; sourceTree = "<group>"; };
+		93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeMatchupapp.swift; sourceTree = "<group>"; };
 		93952FAA292958B300EDE3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93952FAC292958B700EDE3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Pokemon Type Check/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		93952FAF292958B700EDE3D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		93952FA7292958B300EDE3D3 /* Pokemon Type Check */ = {
 			isa = PBXGroup;
 			children = (
-				93952FA8292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift */,
+				93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */,
 				93952FAA292958B300EDE3D3 /* ContentView.swift */,
 				93952FAC292958B700EDE3D3 /* Assets.xcassets */,
 				93952FB1292958B700EDE3D3 /* Persistence.swift */,
@@ -270,7 +270,7 @@
 				93952FB2292958B700EDE3D3 /* Persistence.swift in Sources */,
 				93952FAB292958B300EDE3D3 /* ContentView.swift in Sources */,
 				93952FB5292958B700EDE3D3 /* Pokemon_Type_Check.xcdatamodeld in Sources */,
-				93952FA9292958B300EDE3D3 /* Pokemon_Type_CheckApp.swift in Sources */,
+				93952FA9292958B300EDE3D3 /* PokeMatchupapp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

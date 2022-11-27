@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Pokemon_Type_CheckApp: App {
+struct PokeMatchupapp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
