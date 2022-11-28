@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93231F602933E7EE00F222DF /* monMoves.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93231F5E2933E7EE00F222DF /* monMoves.xcdatamodeld */; };
+		93231F662934127700F222DF /* moveData.json in Resources */ = {isa = PBXBuildFile; fileRef = 93231F652934127700F222DF /* moveData.json */; };
+		93231F6929343A1700F222DF /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 93231F6829343A1700F222DF /* SwiftSoup */; };
+		93231F6C2934683D00F222DF /* PokemonAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 93231F6B2934683D00F222DF /* PokemonAPI */; };
 		936FFE73292DB6940074A8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAC292958B700EDE3D3 /* Assets.xcassets */; };
 		936FFE74292DB6950074A8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93952FAC292958B700EDE3D3 /* Assets.xcassets */; };
 		93952FA9292958B300EDE3D3 /* PokeMatchupapp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */; };
@@ -38,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93231F5F2933E7EE00F222DF /* monMoves.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = monMoves.xcdatamodel; sourceTree = "<group>"; };
+		93231F61293411E400F222DF /* preloadData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = preloadData; sourceTree = "<group>"; };
+		93231F652934127700F222DF /* moveData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = moveData.json; path = "Pokemon Type Check/preloadData/moveData.json"; sourceTree = "<group>"; };
 		93952FA5292958B300EDE3D3 /* PokeMatchup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMatchup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeMatchupapp.swift; sourceTree = "<group>"; };
 		93952FAA292958B300EDE3D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93231F6929343A1700F222DF /* SwiftSoup in Frameworks */,
+				93231F6C2934683D00F222DF /* PokemonAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,7 @@
 		93952F9C292958B300EDE3D3 = {
 			isa = PBXGroup;
 			children = (
+				93231F652934127700F222DF /* moveData.json */,
 				93952FA7292958B300EDE3D3 /* Pokemon Type Check */,
 				93952FBD292958B700EDE3D3 /* Pokemon Type CheckTests */,
 				93952FC7292958B700EDE3D3 /* Pokemon Type CheckUITests */,
@@ -100,12 +110,14 @@
 		93952FA7292958B300EDE3D3 /* Pokemon Type Check */ = {
 			isa = PBXGroup;
 			children = (
+				93231F61293411E400F222DF /* preloadData */,
 				93952FA8292958B300EDE3D3 /* PokeMatchupapp.swift */,
 				93952FAA292958B300EDE3D3 /* ContentView.swift */,
 				93952FAC292958B700EDE3D3 /* Assets.xcassets */,
 				93952FB1292958B700EDE3D3 /* Persistence.swift */,
 				93952FB3292958B700EDE3D3 /* Pokemon_Type_Check.xcdatamodeld */,
 				93952FAE292958B700EDE3D3 /* Preview Content */,
+				93231F5E2933E7EE00F222DF /* monMoves.xcdatamodeld */,
 			);
 			path = "Pokemon Type Check";
 			sourceTree = "<group>";
@@ -151,6 +163,10 @@
 			dependencies = (
 			);
 			name = PokeMatchup;
+			packageProductDependencies = (
+				93231F6829343A1700F222DF /* SwiftSoup */,
+				93231F6B2934683D00F222DF /* PokemonAPI */,
+			);
 			productName = "Pokemon Type Check";
 			productReference = 93952FA5292958B300EDE3D3 /* PokeMatchup.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +239,10 @@
 				Base,
 			);
 			mainGroup = 93952F9C292958B300EDE3D3;
+			packageReferences = (
+				93231F6729343A1700F222DF /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				93231F6A2934683D00F222DF /* XCRemoteSwiftPackageReference "PokemonAPI" */,
+			);
 			productRefGroup = 93952FA6292958B300EDE3D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +261,7 @@
 			files = (
 				93952FB0292958B700EDE3D3 /* Preview Assets.xcassets in Resources */,
 				93952FAD292958B700EDE3D3 /* Assets.xcassets in Resources */,
+				93231F662934127700F222DF /* moveData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +290,7 @@
 			files = (
 				93952FB2292958B700EDE3D3 /* Persistence.swift in Sources */,
 				93952FAB292958B300EDE3D3 /* ContentView.swift in Sources */,
+				93231F602933E7EE00F222DF /* monMoves.xcdatamodeld in Sources */,
 				93952FB5292958B700EDE3D3 /* Pokemon_Type_Check.xcdatamodeld in Sources */,
 				93952FA9292958B300EDE3D3 /* PokeMatchupapp.swift in Sources */,
 			);
@@ -604,7 +626,49 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		93231F6729343A1700F222DF /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		93231F6A2934683D00F222DF /* XCRemoteSwiftPackageReference "PokemonAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kinkofer/PokemonAPI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93231F6829343A1700F222DF /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93231F6729343A1700F222DF /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		93231F6B2934683D00F222DF /* PokemonAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93231F6A2934683D00F222DF /* XCRemoteSwiftPackageReference "PokemonAPI" */;
+			productName = PokemonAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
+		93231F5E2933E7EE00F222DF /* monMoves.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93231F5F2933E7EE00F222DF /* monMoves.xcdatamodel */,
+			);
+			currentVersion = 93231F5F2933E7EE00F222DF /* monMoves.xcdatamodel */;
+			path = monMoves.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		93952FB3292958B700EDE3D3 /* Pokemon_Type_Check.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

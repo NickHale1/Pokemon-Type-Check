@@ -7,7 +7,8 @@
 
 import SwiftUI
 import CoreData
-
+import SwiftSoup
+import PokemonAPI
 
 
 //The fixing the app project
@@ -39,7 +40,21 @@ enum movetypes {
 
 // an individual monster
 class monster {
+    let name: String
+    //let type1: montype
+    //let type2: montype?
+    let moves: [monMove]
+    //var stats: [HP:0,Atk:0]
+    //let teraType: montype?
     
+    
+    init(paste: String){
+        var lines = paste.split(separator: "\n")
+        print(lines)
+        self.name = String(lines[0].split(separator: "@")[0])
+        self.moves = []
+        //type1=PokemonType(name:"None", bgcol: Color.white)
+    }
 }
 
 
@@ -588,16 +603,171 @@ struct ContentView: View {
 
 //other page views
 struct damageCalc: View{
+    @StateObject var myTeam = monsterTeam()
     var body: some View{
         NavigationView{
+            VStack{
+                Text("what the fuck")
+                Text(myTeam.monInfo[0])
+                /*
+                Button("Try me!"){
+                    myTeam.loadTeam()
+                }
+                 */
+                
+                Button("Try me async"){
+                    Task{
+                        let mons = try await myTeam.downloadTeam()
+                        print("AFTER AWAIT")
+                        myTeam.parseTeam(info: mons)
+                    }
+                }
+            }
+                
+            
+            
+            
+            /*
+            Text(myteam.monInfo[0])
+            Text(myteam.monInfo[1])
+            Text(myteam.monInfo[2])
+            Text(myteam.monInfo[3])
+            Text(myteam.monInfo[4])
+            Text(myteam.monInfo[5])
+            */
             
         }.navigationTitle("Damage Calculator")
     }
 }
 
+class monsterTeam : ObservableObject{
+    @Published var monInfo: [String] = ["test","","","","",""]
+    var pasteContent: String = ""
+    var thesoup: [Element] = []
+    
+    func loadTeam(){
+        print("Begin get")
+        getTeam()
+        print("end Get")
+        updateTeam()
+    }
+    
+    func parseTeam(info: [String]) {
+        
+    }
+    
+    func downloadTeam() async throws -> [String] {
+        guard let url = URL(string: "https://pokepast.es/22d5befe76dbc198") else { fatalError("Missing URL") }
+        let urlRequest = URLRequest(url: url)
+        let (data, response) = try await URLSession.shared.data(for: urlRequest)
+        let myData = String(data: data, encoding: .utf8) ?? "oops"
+        print(myData)
+        let doc: Document = try SwiftSoup.parse(myData)
+        let mons = try doc.select("body").first()!
+        let mons2 = try mons.select("article")
+        var i = 0
+        var mymonsters = ["","","","","",""]
+        print(mons2.array())
+        for article: Element in mons2.array() {
+            print("loading mon: " + String(i))
+            try print(article.text())
+            try mymonsters[i]=article.text()
+            i = i+1
+        }
+        return mymonsters
+    }
+    
+    func getTeam() {
+            guard let url = URL(string: "https://pokepast.es/22d5befe76dbc198") else {
+                print("invaludURL")
+                return
+            }
+            
+            URLSession.shared.dataTask(with: url) {
+                (data,response,error) in
+                guard let data = data else {
+                    print("could not get data")
+                    DispatchQueue.main.async {
+                        //self.result = "could not get data"
+                    }
+                    return
+                }
+                do {
+                    DispatchQueue.main.async {
+                        print("RESPONSE")
+                        print(response!)
+                        print("DATA")
+                        print(data)
+                        print("CONTENTS")
+                        
+                        self.pasteContent = String(data: data, encoding: .utf8) ?? "oops"
+                        print(self.pasteContent)
+                        print("loaded into pastecontent")
+                        //print(contents!)
+                        //let doc: Document = try SwiftSoup.parse(contents!)
+                       // let mons = try doc.select("body").first()!
+                      //  let mons2 = try mons.select("article")
+                      //  var i=0
+                     //   for article: Element in mons2.array(){
+                       //     try print(article.text())
+                       //     try self.monInfo[i]=article.text()
+                        //    i = i+1
+                    }
+                } catch {
+                    DispatchQueue.main.async {
+                        print("\(error)")
+                    }
+                }
+                
+                
+            }
+            .resume()
+            //.resume()
+        }
+    
+    func updateTeam() {
+        do{
+            print(self.pasteContent)
+            let doc: Document = try SwiftSoup.parse(self.pasteContent)
+            let mons = try doc.select("body").first()!
+            let mons2 = try mons.select("article")
+            var i = 0
+            print(mons2.array())
+            //self.thesoup = mons.array()
+            print("starting loop")
+            for article: Element in mons2.array() {
+                print("loading mon: " + String(i))
+                try self.monInfo[i]=article.text()
+                i = i+1
+            }
+        } catch {
+            
+        }
+    }
+}
 
+/*
+func parsePaste(team: monsterTeam){
     
-    
+    Task.init(){
+        do {
+            
+            let content = try String(contentsOf: URL(string: "https://pokepast.es/22d5befe76dbc198")!)
+            let doc: Document = try SwiftSoup.parse(content)
+            let mons = try doc.select("body").first()!
+            let mons2 = try mons.select("article")
+            var i=0
+            for article: Element in mons2.array(){
+                try print(article.text())
+                try team.monInfo.append(article.text())
+                i = i+1
+            }
+        } catch{
+            print(error)
+        }
+    }
+}
+    */
 
 
 struct ContentView_Previews: PreviewProvider {
